@@ -33,8 +33,8 @@ Route::get('references', [FrontController::class,'reference']);
 
 Route::get('/products-items/{name}',[FrontController::class,'products']);
 Route::get('/products/products-items/{id}',[FrontController::class,'products_id']);
-
-Route::get('/product/{cat}/{name}',[FrontController::class,'product']);
+Route::post('search', [FrontController::class,'search']);
+Route::get('/product/{name}',[FrontController::class,'product']);
 
 // Route::get('cart', function () {
 //     return view('cart');

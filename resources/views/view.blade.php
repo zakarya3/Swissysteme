@@ -33,7 +33,7 @@
                         <div class="form-control">{{ $user->address }}</div>
                     </div>
                     <div class="col-md-6">
-                        <div class="table-responsive">
+                        <div class="table-responsive" style="color: black !important">
                             <table class="table">
                               <thead>
                                 <tr>

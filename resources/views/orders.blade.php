@@ -22,7 +22,7 @@
                 <div class="card-body">
                   <h6>Commandes</h6>
                   <hr> 
-                  <div class="table-responsive">
+                  <div class="table-responsive" style="color: black !important">
                     <table class="table">
                       <thead>
                         <tr>

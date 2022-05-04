@@ -24,7 +24,7 @@
                       <div class="col-md-12">
                         <div class="input-group mb-3">
                           <label class="input-group-text" for="image">Image</label>
-                          <input type="file" required name="image" class="form-control" id="image">
+                          <input type="file"  name="image" class="form-control" id="image">
                         </div>
                       </div>
                     </div>

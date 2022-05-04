@@ -26,10 +26,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        Schema::defaultStringLength(191);
-        // $category = Category::all();
-        // $cartItems = \Cart::getContent();
-        // View::share('category', $category);
-        // View::share('cartItems', $cartItems);
+       // Schema::defaultStringLength(191);
+        $category = Category::all();
+        $cartItems = \Cart::getContent();
+        View::share('category', $category);
+        View::share('cartItems', $cartItems);
     }
 }

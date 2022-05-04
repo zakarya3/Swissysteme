@@ -23,58 +23,58 @@ Banner innerpage -->
 <div class="container pb-5 mb-2 mb-md-4">
   <div class="row">
       <!-- List of items-->
-      <section class="col-lg-8">
+        <section class="col-lg-8">
           <form action="{{ url('payment') }}" method="post">
               {{ csrf_field() }}
               <input type="hidden" name="_token" value="3r2BsNcJtyRfjStGB4IHk8ky1EsoApGD64jBfxfV">
               <h2 class="h6 pt-1 pb-3 mb-3 border-bottom">Adresse de livraison</h2>
-              <div class="row">
-                  <div class="col-sm-6">
-                      <div class="mb-3">
-                          <label class="form-label" for="checkout-fn">Nom &amp; Prénom</label>
-                          <input class="form-control" required="" name="userName" value="@if ($user!=NULL){{ $user->name }}@endif" type="text"
-                              id="checkout-fn">
-                      </div>
-                  </div>
-                  <div class="col-sm-6">
-                      <div class="col-sm-6">
-                          <div class="mb-3">
-                              <label class="form-label" for="checkout-phone">Numéro de téléphone</label>
-                              <input class="form-control" required="" name="phone" value="@if ($user!=NULL){{ $user->phone }}@endif" type="text"
-                                  id="checkout-phone">
-                          </div>
-                      </div>
-                  </div>
-                  <div class="row">
-                      <div class="col-sm-6">
-                          <div class="mb-3">
-                              <label class="form-label" for="checkout-address-1">Adresse</label>
-                              <input class="form-control" required="" name="address" value="@if ($user!=NULL){{ $user->address }}@endif" type="text"
-                                  id="checkout-address-1">
-                          </div>
-                      </div>
-                      <div class="col-sm-6">
-                          <div class="mb-3">
-                              <label class="form-label" for="checkout-email">Adresse e-mail</label>
-                              <input class="form-control" required="" name="email" value="@if ($user!=NULL){{ $user->email }}@endif" type="email"
-                                  id="checkout-email">
-                          </div>
-                      </div>
-                  </div>
-                  <div class="d-none d-lg-flex pt-4 mt-3">
-                      <div class="w-50 pe-3"><a class="btn btn-secondary d-block w-100" href="{{ url('cart') }}"><i class='bx bx-chevron-left'></i><span class="d-none d-sm-inline">Retour au panier</span><span class="d-inline d-sm-none">Back</span></a></div>
-                      <div class="w-50 ps-2"><button class="btn btn-primary d-block w-100" type="submit"><span class="d-none d-sm-inline">Confirmer</span><span class="d-inline d-sm-none">Next</span><i class='bx bx-chevron-right mt-sm-0 ms-1'></i></button>
-                      </div>
-                  </div>
-              </div>
-              </section>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label class="form-label" for="checkout-fn">Nom &amp; Prénom</label>
+                            <input class="form-control" required="" name="userName" value="@if ($user!=NULL){{ $user->name }}@endif" type="text"
+                                id="checkout-fn">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label class="form-label" for="checkout-phone">Numéro de téléphone</label>
+                            <input class="form-control" required="" name="phone" value="@if ($user!=NULL){{ $user->phone }}@endif" type="text"
+                                id="checkout-phone">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label class="form-label" for="checkout-address-1">Adresse</label>
+                            <input class="form-control" required="" name="address" value="@if ($user!=NULL){{ $user->address }}@endif" type="text"
+                                id="checkout-address-1">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="mb-3">
+                            <label class="form-label" for="checkout-email">Adresse e-mail</label>
+                            <input class="form-control" required="" name="email" value="@if ($user!=NULL){{ $user->email }}@endif" type="email"
+                                id="checkout-email">
+                        </div>
+                    </div>
+                </div>
+                <div class="d-none d-lg-flex pt-4 mt-3">
+                    <ul class="btn-list">
+                        <li><button type="submit" class="theme_btn" data-animation="fadeInUp"
+                                data-delay=".7s">Confirmer <i class="far fa-long-arrow-right"></i></button>
+                        </li>
+                    </ul>
+                </div>
+        </section>
               <!-- Sidebar-->
               <aside class="col-lg-4 pt-4 pt-lg-0 ps-xl-5" style="margin-top: 1.5em">
                   <div class="card">
                   <div class="card-body">
                       <h6>Détails</h6>
                       <hr>
-                      <div class="table-responsive">
+                      <div class="table-responsive" style="color: black !important">
                           <table class="table">
                           <thead>
                               <tr>
@@ -112,9 +112,10 @@ Banner innerpage -->
               <div class="row d-lg-none">
                   <div class="col-lg-8">
                   <div class="d-flex pt-4 mt-3">
-                      <div class="w-50 pe-3"><a class="btn btn-secondary d-block w-100" href="{{ url('cart') }}"><i class='bx bx-chevron-left me-1'></i><span class="d-none d-sm-inline">Retour au panier</span><span class="d-inline d-sm-none">Retour au panier</span></a></div>
-                      <div class="w-50 ps-2"><button class="btn btn-primary d-block w-100" type="submit"><span class="d-none d-sm-inline">Confirmer</span><span class="d-inline d-sm-none">Confirmer</span><i class='bx bx-chevron-right mt-sm-0 ms-1'></i></button></div>
-                  </div>
+                    <ul class="btn-list">
+                        <li><button class="theme_btn" type="submit" data-animation="fadeInUp"
+                                data-delay=".7s">Get Started <i class="far fa-long-arrow-right"></i></button></li>
+                    </ul>            </div>
                   </div>
 
               </div>

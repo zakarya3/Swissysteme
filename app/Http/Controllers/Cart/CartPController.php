@@ -65,7 +65,7 @@ class CartPController extends Controller
         $order->email = $email;
         $order->phone = $phone;
         $order->address = $address;
-        $order->tracking_no = 'Flaster-'.rand(1111,9999);
+        $order->tracking_no = 'Swiss-'.rand(1111,9999);
         $order->save();
         foreach ($cartItems as $item) {
             OrderItem::create([
