@@ -22,9 +22,6 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->string('image1')->nullable();
             $table->string('image2')->nullable();
-            $table->string('image3')->nullable();
-            $table->string('image4')->nullable();
-            $table->string('image5')->nullable();
             $table->string('fiche')->nullable();;
             $table->string('qty')->nullable();
             $table->string('product_reference')->nullable();

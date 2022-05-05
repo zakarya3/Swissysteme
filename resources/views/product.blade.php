@@ -17,7 +17,7 @@
                         <h1>Details</h1>
                         <div class="breadcrumb-list">
                             <ul>
-                                <li><a href="#">Home</a></li>
+                                <li><a href="{{ url('/') }}">Accueil</a></li>
                                 <li>{{ $name }}</li>
                             </ul>
                         </div>
@@ -93,7 +93,7 @@
                             @if ($product->price != null)
                             <span class="new-price mb-30">{{ $product->price }} <small>MAD</small></span><br>
                             @else
-                            <span class="new-price mb-30"><a href="">Conatcez-nous!</a></span><br>
+                            <span class="new-price mb-30"><a href="{{ url('/contact') }}">Conatcez-nous!</a></span><br>
                             @endif
                             @if ($product->qty !== null && $product->qty > 0)
                             <span class="stock pb-2">Stock: <strong class="text-primary">In Stock</strong></span>
@@ -141,21 +141,14 @@
                                 </div>
                             </form>
                         </div>
-                        <div class="product-social">
-                            <span class="share mr-20">Share Now</span>
-                            <a href="#">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-twitter"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-google-plus-g"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fab fa-instagram"></i>
-                            </a>
-                        </div>
+                        @if ($product->fiche != null)
+                            <div class="product-social">
+                                <span class="share mr-20">Fiche Technique:</span>
+                                <a href="{{ asset('assets/uploads/products/ficheTechnique/'.$product->fiche) }}" download="">
+                                    <i class="fas fa-file-download"></i>
+                                </a>
+                            </div>
+                        @endif
                     </div>
                 </div>
             </div>
@@ -178,7 +171,7 @@
                 <div class="col-xl-3 col-lg-3 col-md-3">
                     <div class="product text-center mb-50">
                         <div class="product__img grey-bg mb-30" style="height: 45vh">
-                            <a href="product-details.html"><img src="{{ asset('assets/uploads/products/images/'.$item->image) }}" alt=""></a>
+                            <a href="{{ url('product/'.$item->product_name) }}"><img src="{{ asset('assets/uploads/products/images/'.$item->image) }}" alt=""></a>
                         </div>
                         <div class="product__text">
                             <div class="product__text--icon">
@@ -188,7 +181,7 @@
                                 <a href="#"><i class="fas fa-star"></i></a>
                                 <a href="#"><i class="fas fa-star"></i></a>
                             </div>
-                            <h6><a href="product-details.html">{{ $item->product_name }}</a></h6>
+                            <h6><a href="{{ url('product/'.$item->product_name) }}">{{ $item->product_name }}</a></h6>
                             @if ($item->price != null)
                                 <span class="product-price">{{ $item->price }} MAD</span>
                             @else

@@ -57,11 +57,16 @@ class FrontController extends Controller
     }
     public function search(Request $request)
     {
+        $count_prd = Product::all()->count();
+        if ($count_prd>=4) {
+            $other_prd = Product::all()->random(4);
+        } else {
+            $other_prd = Product::all()->random($count_prd);
+        }
         $name = $request->item;
         $product = Product::where('product_name',$name)->first();
-        $products = Product::all();
         $cartItems = \Cart::getContent();
-        return view('product', compact('product','name','cartItems','products'));
+        return view('product', compact('product','name','cartItems','other_prd'));
     }
 
 

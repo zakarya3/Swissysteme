@@ -276,7 +276,7 @@
                             <li><a href="#">About</a></li>
                             <li><a href="#">Services</a></li>
                             <li><a href="#">News</a></li>
-                            <li><a href="#">Product</a></li>
+                            <li><a href="{{ url('/dashboard') }}">Connexion</a></li>
                         </ul>
                     </div>
                 </div>

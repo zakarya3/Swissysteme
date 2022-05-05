@@ -34,7 +34,7 @@ Banner innerpage -->
                     <div class="d-block d-sm-flex align-items-center text-center text-sm-start"><a class="d-inline-block flex-shrink-0 mx-auto me-sm-4"><img src="{{ asset('assets/uploads/products/images/'.$item->attributes->image) }}" width="160" alt="Product"></a>
                       <div class="pt-2">
                         <input type="hidden" value="{{ $item->id }}" class="prod_id">
-                        <h3 class="product-title fs-base mb-2"><a href="shop-single-v1.html">{{ $item->name }}</a></h3>
+                        <h3 class="product-title fs-base mb-2"><a href="{{ url('product/'.$item->name) }}">{{ $item->name }}</a></h3>
                         <div class="fs-lg text-accent pt-2">{{ $item->price }}.<small>00 MAD</small></div>
                       </div>
                     </div>

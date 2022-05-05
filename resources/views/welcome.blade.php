@@ -15,9 +15,9 @@
                                 <h1 class="mb-20" data-animation="fadeInUp" data-delay=".5s">solair</h1>
                                 <p class="slider-para mb-25">Le développement durable est un axe majeur de SwisSysteme. Elle sait donc répondre aux exigences de ses clients dans le domaine du photovoltaique.</p>
                                 <ul class="btn-list">
-                                    <li><a class="theme_btn" href="service-details.html" data-animation="fadeInUp"
+                                    <li><a class="theme_btn" href="{{ url('/contact') }}" data-animation="fadeInUp"
                                             data-delay=".7s">Get Started <i class="far fa-long-arrow-right"></i></a></li>
-                                    <li><a class="theme_btn" href="about-us.html" data-animation="fadeInUp"
+                                    <li><a class="theme_btn" href="{{ url('/contact') }}" data-animation="fadeInUp"
                                             data-delay=".8s">Learn More <i class="far fa-long-arrow-right"></i></a></li>
                                 </ul>
                             </div>
@@ -35,9 +35,9 @@
                                 <h1 class="mb-20" data-animation="fadeInUp" data-delay=".5s">Electricité</h1>
                                 <p class="slider-para mb-25">Swissysteme propose une gamme complète de solutions moyenne et basse tension pour installer, connecter, protéger, contrôler et mesurer de nombreuses installations électriques, tableaux, appareils électroniques et électromécaniques.</p>
                                 <ul class="btn-list">
-                                    <li><a class="theme_btn" href="service-details.html" data-animation="fadeInUp"
+                                    <li><a class="theme_btn" href="{{ url('/contact') }}" data-animation="fadeInUp"
                                             data-delay=".7s">Get Started <i class="far fa-long-arrow-right"></i></a></li>
-                                    <li><a class="theme_btn" href="about-us.html" data-animation="fadeInUp"
+                                    <li><a class="theme_btn" href="{{ url('/contact') }}" data-animation="fadeInUp"
                                             data-delay=".8s">Learn More <i class="far fa-long-arrow-right"></i></a></li>
                                 </ul>
                             </div>
@@ -55,9 +55,9 @@
                             <h1 class="mb-20" data-animation="fadeInUp" data-delay=".5s">Froid</h1>
                             <p class="slider-para mb-25">Spécialiste du froid, SwisSysteme assure l'installation, la mise en service et la maintenance d'installations frigorifiques (froid commercial, froid industriel,...) ou d'équipements de conditionnement d'air et de climatisation.</p>
                             <ul class="btn-list">
-                                <li><a class="theme_btn" href="service-details.html" data-animation="fadeInUp"
+                                <li><a class="theme_btn" href="{{ url('/contact') }}" data-animation="fadeInUp"
                                         data-delay=".7s">Get Started <i class="far fa-long-arrow-right"></i></a></li>
-                                <li><a class="theme_btn" href="about-us.html" data-animation="fadeInUp"
+                                <li><a class="theme_btn" href="{{ url('/contact') }}" data-animation="fadeInUp"
                                         data-delay=".8s">Learn More <i class="far fa-long-arrow-right"></i></a></li>
                             </ul>
                         </div>
@@ -78,8 +78,8 @@
                         <img src="{{ asset('frontend/images/offre/business-concept-with-team-close-up.jpg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title" style="margin-top: 12px;">ÉQUIPE HUMAINE</h5>
-                          <p class="card-text">Swissysteme présente une équipe humaine hautement qualifiée dans chaque domaine.</p>
-                          <a href="#" style="background-color: #ed2232; margin-top: 10px; border: none;" class="btn btn-primary">Contact</a>
+                          <p class="card-text" style="height: 12vh">Swissysteme présente une équipe humaine hautement qualifiée dans chaque domaine.</p>
+                          <a href="{{ url('/contact') }}" style="background-color: #ed2232; margin-top: 10px; border: none;" class="btn btn-primary">Contact</a>
                         </div>
                       </div>
                 </div>
@@ -88,8 +88,8 @@
                         <img src="{{ asset('frontend/images/offre/handshake-business-men-concept.jpg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title" style="margin-top: 12px;">MARCHÉS ET CLIENTS</h5>
-                          <p class="card-text">Nous fournissons des produits et des services que dépassent les attentes de nos clients.</p>
-                          <a href="#" style="background-color: #ed2232; margin-top: 10px; border: none;" class="btn btn-primary">Contact</a>
+                          <p class="card-text" style="height: 12vh">Nous fournissons des produits et des services que dépassent les attentes de nos clients.</p>
+                          <a href="{{ url('/contact') }}" style="background-color: #ed2232; margin-top: 10px; border: none;" class="btn btn-primary">Contact</a>
                         </div>
                       </div>
                 </div>
@@ -98,8 +98,8 @@
                         <img src="{{ asset('frontend/images/offre/hands-with-world-plant.jpg') }}" class="card-img-top" alt="...">
                         <div class="card-body">
                           <h5 class="card-title" style="margin-top: 12px;">QUALITÉ ET ENVIRONNEMENT</h5>
-                          <p class="card-text">Nous respectons la législation existante au moment en comportant d'une manière respectueuse avec l'environnement.</p>
-                          <a href="#"y style="background-color: #ed2232; margin-top: 10px; border: none;" class="btn btn-primary">Contact</a>
+                          <p class="card-text" style="height: 12vh">Nous respectons la législation existante au moment en comportant d'une manière respectueuse avec l'environnement.</p>
+                          <a href="{{ url('/contact') }}"y style="background-color: #ed2232; margin-top: 10px; border: none;" class="btn btn-primary">Contact</a>
                         </div>
                       </div>
                 </div>
@@ -114,7 +114,7 @@
                 <div class="col-xl-5 col-lg-5 col-md-12">
                     <div class="history mb-30">
                         <div class="history__thumb data-tilt ">
-                            <img class="img-fluid" src="assets/img/about/chose6.jpg" alt="">
+                            <img class="img-fluid" src="{{ asset('frontend/images/chose/chose6.jpg') }}" alt="">
                         </div>
                         <div class="history__progress d-sm-flex align-items-center justify-content-between theme-bg ml-70 pos-rel">
                             <div class="chart pos-rel mr-40" data-percent="100" aria-valuemin="70" data-scale-color="#ffb400">
@@ -139,7 +139,7 @@
                             <span class="history__content__para">SwisSystme est une société de distribution, d'installation et de conseils. Cette société est née d'une volonté de répondre au mieux aux attentes des particuliers et industriels dans le secteur d'électricité, des énergies renouvelables, de climatisation et de plomberie.
                             </span>
                             <p class="mt-30 mb-40"></p>
-                            <a href="about-us.html" class="theme_btn">Learn More <i class="far fa-long-arrow-right"></i></a>
+                            <a href="{{ url('/contact') }}" class="theme_btn">Learn More <i class="far fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -169,7 +169,7 @@
                         <div class="promotion__text">
                             <h6 class="mb-15">La qualité</h6>
                             <p class="mb-15">Une qualité d'exécution assurée par le professionnalisme, de nos installateurs.</p>
-                            <a href="blog-details.html" class="more_btn">Read More <i class="far fa-long-arrow-right"></i></a>
+                            <a href="{{ url('/contact') }}" class="more_btn">Plus de détails <i class="far fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -181,7 +181,7 @@
                         <div class="promotion__text">
                             <h6 class="mb-15">Le service</h6>
                             <p class="mb-15">Un suivi continu de la conception au raccordement.</p>
-                            <a href="blog-details.html" class="more_btn">Read More <i class="far fa-long-arrow-right"></i></a>
+                            <a href="{{ url('/contact') }}" class="more_btn">Plus de détails <i class="far fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -193,7 +193,7 @@
                         <div class="promotion__text">
                             <h6 class="mb-15">Les prix</h6>
                             <p class="mb-15">DES PRIX ATTRACTIFS ET COMPETITIFS.</p>
-                            <a href="blog-details.html" class="more_btn">Read More <i class="far fa-long-arrow-right"></i></a>
+                            <a href="{{ url('/contact') }}" class="more_btn">Plus de détails <i class="far fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -205,7 +205,7 @@
                         <div class="promotion__text">
                             <h6 class="mb-15">La garanti</h6>
                             <p class="mb-15">Du matériel haut de gamme, garanti pour son rendement et sa longévité exceptionnels</p>
-                            <a href="blog-details.html" class="more_btn">Read More <i class="far fa-long-arrow-right"></i></a>
+                            <a href="{{ url('/contact') }}" class="more_btn">Plus de détails <i class="far fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -237,9 +237,9 @@
                             </div>
                         </div>
                         <div class="promotion3__text">
-                            <h6 class="mb-15"><a href="service-details.html">Photovoltaïque</a></h6>
+                            <h6 class="mb-15"><a href="{{ url('/contact') }}">Photovoltaïque</a></h6>
                             <p style="height: 25vh;">Le développement durable est un axe majeur de SwisSysteme. Elle sait donc répondre aux exigences de ses clients dans le domaine du photovoltaique.</p>
-                            <a href="#" class="more_btn2"><i class="far fa-long-arrow-right"></i></a>
+                            <a href="{{ url('/contact') }}" class="more_btn2"><i class="far fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -255,9 +255,9 @@
                             </div>
                         </div>
                         <div class="promotion3__text">
-                            <h6 class="mb-15"><a href="service-details.html">Electricité</a></h6>
+                            <h6 class="mb-15"><a href="{{ url('/contact') }}">Electricité</a></h6>
                             <p style="height: 25vh;">Swissysteme propose une gamme complète de solutions moyenne et basse tension pour installer, connecter, protéger, contrôler et mesurer de nombreuses installations électriques, tableaux, appareils électroniques et électromécaniques.</p>
-                            <a href="#" class="more_btn2"><i class="far fa-long-arrow-right"></i></a>
+                            <a href="{{ url('/contact') }}" class="more_btn2"><i class="far fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -273,9 +273,9 @@
                             </div>
                         </div>
                         <div class="promotion3__text">
-                            <h6 class="mb-15"><a href="service-details.html">Climatisation</a></h6>
+                            <h6 class="mb-15"><a href="{{ url('/contact') }}">Climatisation</a></h6>
                             <p style="height: 25vh;">Spécialiste du froid, SwisSysteme assure l'installation, la mise en service et la maintenance d'installations frigorifiques (froid commercial, froid industriel,...) ou d'équipements de conditionnement d'air et de climatisation.</p>
-                            <a href="#" class="more_btn2"><i class="far fa-long-arrow-right"></i></a>
+                            <a href="{{ url('/contact') }}" class="more_btn2"><i class="far fa-long-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>

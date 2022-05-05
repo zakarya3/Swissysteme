@@ -97,39 +97,6 @@
                   <div class="row">
                     <div class="col-md-12">
                       <div class="input-group mb-3">
-                        @if ($products->image3)
-                        <img src="{{ asset('assets/uploads/products/images/'.$products->image3) }}" style="width: 40%" alt="">
-                        @endif
-                        <label class="input-group-text" for="image">Image (optional)</label>
-                        <input type="file"  name="image3" class="form-control" id="image">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="input-group mb-3">
-                        @if ($products->image4)
-                        <img src="{{ asset('assets/uploads/products/images/'.$products->image4) }}" style="width: 40%" alt="">
-                        @endif
-                        <label class="input-group-text" for="image">Image (optional)</label>
-                        <input type="file"  name="image4" class="form-control" id="image">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="input-group mb-3">
-                        @if ($products->image5)
-                        <img src="{{ asset('frontend/images/categories/video.jpeg') }}" style="width: 40%" alt="">
-                        @endif
-                        <label class="input-group-text" for="image">Vidéo (optional)</label>
-                        <input type="file"  name="image5" class="form-control" id="image">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="input-group mb-3">
                         @if ($products->fiche)
                         <a href="{{ url('assets/uploads/products/ficheTechnique/'.$products->fich) }}" download alt=""></a>
                         @endif

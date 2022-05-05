@@ -1095,7 +1095,7 @@ a[x-apple-data-detectors='true'] {
       <td class="v-container-padding-padding" style="overflow-wrap:break-word;word-break:break-word;padding:0px 10px 30px 15px;font-family:'Montserrat',sans-serif;" align="left">
         
   <div class="v-text-align" style="color: #34495e; line-height: 150%; text-align: left; word-wrap: break-word;">
-    <p style="font-size: 14px; line-height: 150%;"><span style="font-family: Lato, sans-serif; font-size: 14px; line-height: 21px;"><span style="font-size: 16px; line-height: 24px;">Si vous avez un compte invité, vous pouvez suivre votre commande via la section <a href="{{ url('ttps://www.swissysteme.ma/view-order/'.$id) }}" style="font-weight: 600;color: #cb2821">Suivi de commande</a> sur notre boutique.</span></span></p>
+    <p style="font-size: 14px; line-height: 150%;"><span style="font-family: Lato, sans-serif; font-size: 14px; line-height: 21px;"><span style="font-size: 16px; line-height: 24px;">Si vous avez un compte invité, vous pouvez suivre votre commande via la section <a href="{{ url('ttps://www.swissysteme.ma/view-order/'.$id) }}" style="font-weight: 600; cursor: pointer; ;color: #cb2821">Suivi de commande</a> sur notre boutique.</span></span></p>
   </div>
 
       </td>
