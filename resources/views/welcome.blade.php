@@ -330,7 +330,7 @@
                             <img src="{{ asset('frontend/images/chose/gallery-img02.jpg') }}" alt="">
                         </div>
                         <div class="chose__img__two pos-rel text-center mb-30">
-                            <img src="{{ asset('frontend/images/chose/chose2.jpg') }}" alt="">
+                            <img src="{{ asset('frontend/images/chose/chose2.jpg') }}" style="width: 100%" alt="">
                         </div>
                     </div>
                 </div>
