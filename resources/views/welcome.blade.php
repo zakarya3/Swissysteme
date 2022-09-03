@@ -12,7 +12,7 @@
                         <div class="col-xl-10 offset-xl-1">
                             <div class="slider__content text-center pt-70">
                                 <h5 class="line pos-rel mb-30">Photovoltaïque</h5>
-                                <h1 class="mb-20" data-animation="fadeInUp" data-delay=".5s">solair</h1>
+                                <h1 class="mb-20" data-animation="fadeInUp" data-delay=".5s">solaire</h1>
                                 <p class="slider-para mb-25">Le développement durable est un axe majeur de SwisSysteme. Elle sait donc répondre aux exigences de ses clients dans le domaine du photovoltaique.</p>
                                 <ul class="btn-list">
                                     <li><a class="theme_btn" href="{{ url('/contact') }}" data-animation="fadeInUp"
@@ -70,7 +70,7 @@
     <!--slider-area start-->
     <!--service-area start-->
     <section class="service-area pos-rel pt-130 pb-110">
-        <div class="service-shape pos-abl"><img src="{{ asset('frontend/images/shape/shape5.png') }}sset }}" alt=""></div>
+        <div class="service-shape pos-abl"><img src="{{ asset('frontend/images/shape/shape5.png') }}" alt=""></div>
         <div class="container">
             <div class="row service-inner-row">
                 <div class="col-xl-4 col-lg-4 col-md-6 ">
@@ -150,7 +150,6 @@
     <!--promotion-area start-->
     <section class="promotion-area black-soft-bg pos-rel pt-125 pb-100">
         <div class="promotion-shape-one pos-abl"><img src="{{ asset('frontend/images/promotion-shape/shape2.png') }}" alt=""></div>
-        <div class="promotion-shape-two pos-abl"><img src="{{ asset('frontend/images/promotion-shape/shape3.png') }}" alt=""></div>
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 offset-xl-3">
